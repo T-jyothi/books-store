@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authors</title>
+    <link rel="icon" type="image/x-icon" href="your-favicon.ico">
+    
+    <!-- Font Awesome & Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          
+        }
+
+
+
+        /* Navbar Styling */
+nav {
+    background-color: rgb(236, 165, 35);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    height: 90px;
+    width: auto;
+    margin: 0 20px;
+}
+
+/* Navbar Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+/* Dropdown Menu */
+.nav-a {
+    position: relative;
+    z-index: 10;
+}
+
+.nav-a .dropdown {
+    display: none;
+    position: absolute;
+    color: wheat;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    /* padding: 10px 0;*/
+    min-width: 150px; 
+    /* top: 100%;
+    left: 0;
+    border-radius: 5px; */
+    z-index: 1000;
+}
+
+.nav-a .dropdown li {
+    padding: 10px;
+}
+
+.nav-a .dropdown li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.nav-a .dropdown li:hover {
+    background-color: none;
+    color: black;
+}
+
+/* Show dropdown on hover */
+.nav-a:hover .dropdown {
+    display: block;
+}
+
+
+
+
+
+        /* Navbar */
+        nav {
+    background-color:#EFB036;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distributes items evenly */
+}
+
+/* Logo Styling */
+.logo {
+    height: 90px;
+    width: auto;
+    margin: 0 20px; /* Adjusts spacing */
+}
+
+/* Navbar Items in the Middle */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    flex-grow: 1;
+    justify-content: center; /* Centers nav items */
+}
+
+
+        .nav-links li a {
+            font-size:20px;
+            font-weight:bold;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-decoration: none;
+            color: antiquewhite;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links li a:hover {
+            /* color: black; */
+            color: black;
+        }
+
+    body{
+        background-color:#a89dc4;
+    }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 20px auto;
+    border: 5px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    
+
+}
+.author{
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+.aut-img{
+    flex: 1;
+     
+}
+
+.au-img{
+    height: auto;
+    width: 250px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.aut-info {
+            flex: 2;
+            text-align: center;
+        }
+
+.aut-info h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: #e08f48;  
+    font-family: 'Prosto One', sans-serif; 
+    text-transform: uppercase;  
+    margin-bottom: 10px; 
+   text-align: center;
+    padding-left: 10px;
+     
+}
+
+        p {
+            font-size: 20px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+.aut-info button{
+    background-color: #5022e6;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    
+    
+}
+
+.aut-info button:hover {
+    background-color: rgb(59, 54, 155);
+}
+        
+        /* Footer */
+        footer {
+            background-color: #C1D8C3;
+            padding: 40px 0;
+            text-align: left;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: auto;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 220px;
+            padding: 10px;
+        }
+
+        .footer-section h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0px;
+            margin-top: 10px;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-section ul li a {
+            font-size: 16px;
+            color: #4e4a4a;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            color: orangered;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+                margin-top: 10px;
+            }
+
+            .display-text {
+                font-size: 4vw;
+                padding: 10px;
+                width: 90%;
+            }
+
+            .author {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .au-img {
+        width: 200px;
+    }
+
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <img class="logo" src="./book-logo.png" alt="Logo">
+        <ul class="nav-links">
+            <li><a href="./Home.html">Home</a></li>
+            <li class="nav-a">
+                <a href="#">Category</a>
+                <ul class="dropdown">
+                    <li><a href="./Mystery.html">Mystery</a></li>
+                    <li><a href="./Psycholog.html">Psychology</a></li>
+                    <li><a href="./History.html">History</a></li>
+                    <li><a href="./Philosophy.html">Philosophy</a></li>
+                    
+                </ul>
+            </li>
+             
+             
+            <li class="nav-a">
+                <a href="#">Best Sellers</a>
+                <ul class="dropdown">
+                    <li><a href="./Newarrival.html">New Arrivals</a></li>
+                    <li><a href="./Trending.html">Trending</a></li>
+                     
+                </ul>
+            </li>
+            <li><a href="./Authores.html">Authors</a></li>
+            <li><a href="./Contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+ <body>
+
+
+
+
+    <div class="container">
+        <div class="author">
+            <div class="aut-img">
+                <img class="au-img"  src="./Leo Tolstoy.png" alt="">
+            </div>
+            <div class="aut-info">
+                <h3>
+                    Leo Tolstoy (1828-1910)
+                </h3>
+             <p>
+                A Russian novelist celebrated for masterpieces like "War and Peace" and "Anna Karenina," Tolstoy's works delve deep into human nature and society.
+             </p>
+             <button>
+                Read More..
+             </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="author">
+           
+            <div class="aut-info">
+                <h3>
+                    Jane Austen (1775-1817)
+
+                </h3>
+              <p>
+                An English novelist known for her keen observations of the British landed gentry, Austen's classics include "Pride and Prejudice" and "Sense and Sensibility."
+              </p>
+             <button>
+                Read More..
+             </button>
+            </div>
+            <div class="aut-img">
+                <img class="au-img"  src="./Jane Austen.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="author">
+            <div class="aut-img">
+                <img class="au-img"  src="./Gabriel García Márquez.jpeg" alt="">
+            </div>
+            <div class="aut-info">
+                <h3>
+                    Gabriel García Márquez (1927-2014)
+                </h3>
+            
+                <p>
+                    Gabriel García Márquez was a Colombian novelist, short-story writer, and journalist, best known for pioneering the literary style of Magical Realism. He won the Nobel Prize in Literature in 1982 for his contributions to literature.
+                    García Márquez’s works remain widely read and studied, continuing to captivate readers with their rich narratives and deep emotional impact.
+                </p>
+             <button>
+                Read More..
+             </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="author">
+           
+            <div class="aut-info">
+                <h3>
+                    Agatha Christie (1890-1976)
+
+                </h3>
+               <p>
+                Known as the "Queen of Mystery," this English writer created iconic detectives Hercule Poirot and Miss Marple, penning classics like "Murder on the Orient Express."
+               </p>
+             <button>
+                Read More..
+             </button>
+            </div>
+            <div class="aut-img">
+                <img class="au-img"  src="./Agatha Christie.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="author">
+            <div class="aut-img">
+                <img class="au-img"  src="./rk.png" alt="">
+            </div>
+           
+            <div class="aut-info">
+                <h3>
+                    R.K. Narayan (1906–2001)
+
+                </h3>
+              <p>
+                An English novelist known for her keen observations of the British landed gentry, Austen's classics include "Pride and Prejudice" and "Sense and Sensibility."
+              </p>
+             <button>
+                Read More..
+             </button>
+            </div>
+           
+        </div>
+    </div>
+ </body>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Mission & Vision</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Support</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Social Media</h3>
+                <ul>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="#">Address</a></li>
+                    <li><a href="#">+91 9998887771</a></li>
+                    <li><a href="#">DRSRF@org.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        
+
+  
+    </footer>
+
+</body>
+</html>

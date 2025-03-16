@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychology</title>
+    <link rel="icon" type="image/x-icon" href="your-favicon.ico">
+    
+    <!-- Font Awesome & Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          
+        }
+
+
+
+        /* Navbar Styling */
+nav {
+    background-color: rgb(236, 165, 35);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    height: 90px;
+    width: auto;
+    margin: 0 20px;
+}
+
+/* Navbar Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+/* Dropdown Menu */
+.nav-a {
+    position: relative;
+    z-index: 10;
+}
+
+.nav-a .dropdown {
+    display: none;
+    position: absolute;
+    color: wheat;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    /* padding: 10px 0;*/
+    min-width: 150px; 
+    /* top: 100%;
+    left: 0;
+    border-radius: 5px; */
+    z-index: 1000;
+}
+
+.nav-a .dropdown li {
+    padding: 10px;
+}
+
+.nav-a .dropdown li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.nav-a .dropdown li:hover {
+    background-color: none;
+    color: black;
+}
+
+/* Show dropdown on hover */
+.nav-a:hover .dropdown {
+    display: block;
+}
+
+
+
+
+
+        /* Navbar */
+        nav {
+    background-color:#EFB036;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distributes items evenly */
+}
+
+/* Logo Styling */
+.logo {
+    height: 90px;
+    width: auto;
+    margin: 0 20px; /* Adjusts spacing */
+}
+
+/* Navbar Items in the Middle */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    flex-grow: 1;
+    justify-content: center; /* Centers nav items */
+}
+
+
+        .nav-links li a {
+            font-size:20px;
+            font-weight:bold;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-decoration: none;
+            color: antiquewhite;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links li a:hover {
+            /* color: black; */
+            color: black;
+        }
+
+   
+    .container{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin:0px;
+        flex-wrap: wrap;
+        padding: 40px 20px;
+       background-color: rgb(217, 206, 231);
+       /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+        
+    }
+   
+ .images{
+    height: 500px;
+    width: 300x;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; 
+ }
+ .inside-container:hover .images {
+            transform: scale(1.1);
+        }
+ 
+.inside-container{
+           background: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 280px;
+            text-align: center;
+    border: 1px soild #ccc;
+    padding: 10px;
+    width: auto;
+}
+ 
+.info {
+            margin-top: 20px;
+            text-align: left;
+        }
+ 
+        .info p  {
+            font-size: 16px;
+            margin: 5px 0;
+            height: 1.5;;
+            /* line-height: 1.5; */
+            color: #333;
+        }
+        .info strong {
+            color: #e186a5;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        .inside-container:hover strong {
+            color: #1E88E5;
+        }
+
+        .see {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: rgb(217, 206, 231); ;
+}
+
+
+.see button {
+    background: #3c36d9;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.see button:hover {
+    background: #D81B60; /* Darker Shade */
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.see button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+        /* Footer */
+        footer {
+            background-color: #C1D8C3;
+            padding: 40px 0;
+            text-align: left;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: auto;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 220px;
+            padding: 10px;
+        }
+
+        .footer-section h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0px;
+            margin-top: 10px;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-section ul li a {
+            font-size: 16px;
+            color: #4e4a4a;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            color: orangered;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .inside-container {
+                width: 90%;
+            }
+            nav {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+                margin-top: 10px;
+            }
+
+            .display-text {
+                font-size: 4vw;
+                padding: 10px;
+                width: 90%;
+            }
+            .see button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+        
+
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <img class="logo" src="./book-logo.png" alt="Logo">
+        <ul class="nav-links">
+            <li><a href="./Home.html">Home</a></li>
+            <li class="nav-a">
+                <a href="#">Category</a>
+                <ul class="dropdown">
+                    <li><a href="./Mystery.html">Mystery</a></li>
+                    <li><a href="./Psycholog.html">Psychology</a></li>
+                    <li><a href="./History.html">History</a></li>
+                    <li><a href="./Philosophy.html">Philosophy</a></li>
+                    
+                </ul>
+            </li>
+             
+             
+            <li class="nav-a">
+                <a href="#">Best Sellers</a>
+                <ul class="dropdown">
+                    <li><a href="./Newarrival.html">New Arrivals</a></li>
+                    <li><a href="./Trending.html">Trending</a></li>
+                     
+                </ul>
+            </li>
+            <li><a href="./Authores.html">Authors</a></li>
+            <li><a href="./Contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+ <body>
+
+
+<div class="container">
+    <div class="inside-container">
+      
+        <img class="images" src="./gone-girl-.jpeg" alt="">
+     <div class="info">
+        <p> <strong>Title:</strong>Gone Girl </p>
+     
+       <p><strong>Author:</strong>Rachana Swami</p>
+       <p><strong>Edition:</strong>6<sup>th</sup></p>
+       <p><strong>Publication:</strong>Falcon</p>
+    </div>
+</div>
+    <div class="inside-container">
+       
+        <img class="images"   src="./the-girl-with-the-dragon-tattoo.jpeg" alt="">
+        <div class="info">
+        <p> <strong>Title:</strong>Dragon Tattoo </p>
+       <p><strong>Author:</strong>Romeaio</p>
+       <p><strong>Edition:</strong>7<sup>th</sup></p>
+       <p><strong>Publication:</strong>HarperCollins</p>
+       </div>
+    </div>
+
+    <div class="inside-container">
+      
+        <img class="images" src="./gone-girl-.jpeg" alt="">
+     <div class="info">
+        <p> <strong>Title:</strong>Gone Girl </p>
+     
+       <p><strong>Author:</strong>Rachana Swami</p>
+       <p><strong>Edition:</strong>6<sup>th</sup></p>
+       <p><strong>Publication:</strong>Falcon</p>
+    </div>
+</div>
+    
+</div>
+
+<div class="see">
+    <button>See More</button>
+</div>
+    
+             
+ </body>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Mission & Vision</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Support</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Social Media</h3>
+                <ul>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="#">Address</a></li>
+                    <li><a href="#">+91 9998887771</a></li>
+                    <li><a href="#">DRSRF@org.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        
+
+  
+    </footer>
+
+</body>
+</html>
